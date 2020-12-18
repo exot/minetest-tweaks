@@ -65,15 +65,6 @@ for color,ingredients in pairs(colors_from_plants) do
 end
 
 
--- Debug output when new blocks are generated
-
-minetest.register_on_generated(function(minp, maxp, seed)
-  local debug = "New block generated with minp="..(minetest.pos_to_string(minp))..", maxp="..(minetest.pos_to_string(maxp))..", seed="..seed
-  print(debug)
-  minetest.chat_send_all(debug)
-end)
-
-
 -- End
 
 minetest.log("action", "[Minetest Tweaks] Loaded!")
