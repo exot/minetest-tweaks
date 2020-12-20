@@ -64,6 +64,14 @@ for color,ingredients in pairs(colors_from_plants) do
    })
 end
 
+minetest.register_craft({
+  output = "mobs:leather",
+  recipe = {{'basic_materials:plastic_sheet',
+             'basic_materials:plastic_sheet',
+             'basic_materials:plastic_sheet'},
+             {'wool:white', 'wool:white', 'wool:white'}}
+})
+
 
 -- End
 
