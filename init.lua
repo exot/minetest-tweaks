@@ -69,7 +69,7 @@ minetest.register_craft({
   recipe = {{'basic_materials:plastic_sheet',
              'basic_materials:plastic_sheet',
              'basic_materials:plastic_sheet'},
-             {'wool:white', 'wool:white', 'wool:white'}}
+             {'group:wool', 'group:wool', 'group:wool'}}
 })
 
 
