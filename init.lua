@@ -90,6 +90,22 @@ then
    })
 end
 
+-- Let's provide a recipe for feathers that does not invole killing duckies
+
+if minetest.get_modpath("petz") ~= nil and
+   minetest.get_modpath("farming")
+then
+
+   minetest.register_craft({
+         output = "petz:ducky_feather",
+         recipe = {
+            {"farming:string"},
+            {"farming:string"},
+            {"default:stick"}}
+   })
+
+end
+
 
 -- End
 
