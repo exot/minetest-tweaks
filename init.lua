@@ -72,6 +72,24 @@ minetest.register_craft({
              {'group:wool', 'group:wool', 'group:wool'}}
 })
 
+-- When playing with petz, we get a new kind of leather.  Let's make it
+-- exchangable with the leather from mobs
+
+if minetest.get_modpath("petz") ~= nil and
+   minetest.get_modpath("mobs")
+then
+   minetest.register_craft({
+         type = "shapeless",
+         output = "mobs:leather",
+         recipe = {"petz:leather"}
+   })
+   minetest.register_craft({
+         type = "shapeless",
+         output = "petz:leather",
+         recipe = {"mobs:leather"}
+   })
+end
+
 
 -- End
 
