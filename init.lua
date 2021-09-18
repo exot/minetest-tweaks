@@ -106,6 +106,21 @@ then
 
 end
 
+-- Silk cocoons are hard to find, let's make a recipe for silk bobbins
+
+if minetest.get_modpath("petz") ~= nil then
+
+   minetest.register_craft({
+         output = "petz:silk_bobbin",
+         recipe = {
+            {"group:wool", "group:wool", "group:wool"},
+            {"group:wool", "group:stick", "group:wool"},
+            {"group:wool", "group:wool", "group:wool"}
+         }
+   })
+
+end
+
 
 -- End
 
