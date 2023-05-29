@@ -121,6 +121,16 @@ if minetest.get_modpath("petz") ~= nil then
 
 end
 
+-- Do not allow to directly craft travelboxes, this makes the map too large;
+-- instead, sell them at limited quantity in a shop or something.  We keep
+-- elevators for now, though, because they are not used much (yet).
+
+if minetest.get_modpath("travelnet") ~= nil then
+
+   minetest.clear_craft({output = "travelnet:travelnet"})
+
+end
+
 
 -- End
 
